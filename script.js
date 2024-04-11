@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Script for game card videos on games.html page. On mouseover, video starts playing, then resets when the mouse leaves the element
 document.addEventListener("mouseover", function()
 {
-    var myVideo = document.getElementsByClassName("game_card_1_video");
+    var myVideo = document.getElementsByClassName("game_card_video");
     playMyVideo();
 
     function playMyVideo(){
