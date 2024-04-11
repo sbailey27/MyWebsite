@@ -1,0 +1,396 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*****NAVIGATION BAR*****/
+/*navigation bar*/
+.navbar
+{
+    background-color: #262626;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+/*links in navigation bar*/
+.navlinks a
+{
+    /*list-style-type: none;*/
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/*Changes color of links upon mouseover*/
+.navlinks a:hover, .logo a:hover
+{
+    color: #FF1053;
+}
+
+/*CSS for list elements within div class "navlinks". Removes list bullets and displays list horizontally*/
+ .navlinks ul li
+ {
+    list-style-type: none;
+    display: inline-block;
+    padding: 25px;
+ }
+
+ /*logo styling*/
+ .logo a
+ {
+     text-decoration: none;
+     font-size: 40px;
+     color: white;
+ }
+ 
+ /*logo img styling*/
+ .logoimg
+ {
+    width: 40px;
+    height: auto;
+    position: relative;
+    top: 6px;
+    margin-left: 20px;
+ }
+
+ .searchbar_div
+ {
+    margin-right: 20PX;
+ }
+
+ .searchbar
+ {
+    padding: 0px;
+    border: solid 2px;
+    border-color: #FF1053;
+    border-radius: 10%;
+    outline: none;
+    height: 30px;
+ }
+
+ /*****CSS FOR FRONT PAGE VIDEO SLIDER*****/
+ .videoslider 
+ {
+    width: 100%;
+    position: relative;
+ }
+
+ .frontvideo1
+ {
+    background-color: #F46036;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    max-width: 100vw;
+    /*object-fit: cover;*/
+ }
+
+ .slider_nav /*class of UL containing slider thumbnail images*/
+ {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    object-fit: contain;
+ }
+
+ .videoslider li
+{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.videoslider ul img
+{
+    width: 200px;
+    height: auto;
+    opacity: 50%;
+}
+
+.videoslider ul img:hover 
+{
+    width: 250px;
+    transition: 1s;
+    opacity: 100%;
+}
+ /*CSS for News section*/
+.news
+{
+    background-color: #FFFFFF;
+    
+}
+
+ /* CSS for all images in news section*/
+.newsimages
+{
+    /*display: flex;*/
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+/*CSS for all paragraphs in news section*/
+.news p
+{
+    font-size: 30px;
+    padding: 5px;
+}
+
+
+/*CSS to style links in news section*/
+.news a
+{
+    text-decoration: none;
+    color: #2176FF;
+    display: block;
+    
+}
+
+.news span
+{
+    font-weight: 600;
+    color: #F46036;
+}
+
+/* sets flex for news subsections */
+.news_1, .news_3, .news_2
+{
+    display: flex;
+    align-items: center;
+}
+
+.news_1 p, .news_3 p
+{
+    margin: 10px; 
+}
+
+/* second div in news section*/
+.news_2
+{
+    justify-content: space-between;  /*does nothing*/
+}
+
+/*CSS for paragraphs in news_2 div */
+.news_2 p
+{
+    margin-left: 70px;
+}
+
+
+
+
+/*jobs div*/
+.jobs
+{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/*****SOCIAL MEDIA BAR*****/
+.socials
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 75%;
+    left: 10px;
+    border: #FF1053 1px solid;
+    border-radius: 10%;
+    background-color:rgba(255, 255, 255, 0.4);
+    width: 50px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.socials img
+{
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    
+    
+}
+
+.socials li
+{
+    list-style-type: none;
+}
+
+
+/*****GAMES PAGES CSS*****/
+.game_container img 
+{
+    /*width: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gamesPageVideo
+{
+    display: none;
+}
+
+.game_container video
+{
+    width: 1280px;
+    max-width: 100vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game_container
+{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: rgb(216, 38, 38);
+
+}
+
+.centeredtext 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    
+}
+
+.centeredtext h1
+{
+    -webkit-text-stroke-color:  #262626 ;
+    -webkit-text-stroke-width: 1px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.centeredtext span
+{
+    font-size: 100px;
+}
+
+.centeredtext_minor
+{
+    font-size: 1rem;
+    margin-top: 120px;
+}
+
+
+
+.gamecards
+{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*position: absolute;*/ /*removed. Positioning this flexbox container causes it the move around as the screen resizes*/
+    /*top: 800px;*/
+    /*left: 23%;*/
+    align-items: center;
+    justify-content: center;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 300px;
+    object-fit: contain;
+    
+}
+
+
+
+.game_card_1
+{
+    position: relative;
+    
+}
+.game_card_2
+{
+    position: relative;
+    top: 200px;
+}
+.game_card_3
+{
+    position: relative;
+    top: 400px;
+}
+
+.minor
+{
+    position: absolute;
+    left: 64px;
+    bottom: 24px;
+    width: 500px;
+    height: 100px;
+    color: #FFFFFF;
+    background-color: #262626;
+    border: #FFFFFF 1px solid;
+}
+
+.major
+{
+    position: absolute;
+    left: 470px;
+    bottom: -42px;
+    width: 500px;
+    height: 100px;
+    padding: 0px;
+    background-color: #FFFFFF;
+    color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    border: 5px solid;
+    
+}
+
+.minor p 
+{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 6px;
+    text-align: justify;
+    display: flex;
+    font-size: 1rem;
+    word-spacing: -2px;
+    
+}
+
+.major p
+{
+    /*margin-right: 100px;
+    margin-left: 10px;
+    margin-top: 10px;*/
+    text-align: center;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.gamecards img
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.game_card_video
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    height: auto;
+    max-width: 100%;
+}
