@@ -1,7 +1,7 @@
 
+// Games Page Video Slideshow
 // Force script to wait for the content to be fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-    // Games Page Video Slideshow
     var myIndex = 0;
     var videos = document.getElementsByClassName("gamesPageVideo");
     carousel();
