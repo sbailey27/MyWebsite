@@ -82,7 +82,7 @@
     position: relative;
  }
 
- .frontvideo1
+ .frontvideo
  {
     background-color: #F46036;
     width: 100%;
@@ -128,6 +128,7 @@
 .frontvideo
 {
     display: none;
+    
 }
  /*CSS for News section*/
 .news
