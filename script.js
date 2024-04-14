@@ -1,3 +1,27 @@
+// Front page slider
+// Force script to wait for the content to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    var slides = 0;
+    var frontVideos = document.getElementsByClassName("frontvideo");
+    frontVideoSlide();
+
+    function frontVideoSlide() {
+        frontVideos[slides].style.display = "block"; // Show current video
+        frontVideos[slides].play(); // Start playing current video
+
+        // Wait for the current video to finish playing
+        frontVideos[slides].addEventListener('ended', function() {
+            frontVideos[slides].style.display = "none"; // Hide current video
+            slides++; // Move to the next video
+            if (slides >= frontVideos.length) {
+                slides = 0; // Reset index to loop back to the first video
+            }
+            setTimeout(frontVideoSlide, 2); //small delay
+        });
+    }
+});
+
+
 
 // Games Page Video Slideshow
 // Force script to wait for the content to be fully loaded

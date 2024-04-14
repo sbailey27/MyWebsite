@@ -124,6 +124,11 @@
     transition: 1s;
     opacity: 100%;
 }
+
+.frontvideo
+{
+    display: none;
+}
  /*CSS for News section*/
 .news
 {
