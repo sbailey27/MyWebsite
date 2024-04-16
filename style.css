@@ -451,3 +451,29 @@
     height: auto;
     max-width: 100%;
 }
+
+/*****JObs Page CSS*****/
+.why_choose
+{
+    margin-top: 70px;
+}
+
+.job_benefits
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.job_card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.job_card p
+{
+    padding: 10px;
+}
