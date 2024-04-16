@@ -202,7 +202,8 @@
     padding: 100px;
     display: flex;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    
 }
 
 .jobs a
@@ -217,22 +218,41 @@
 {   
     width: 1280px;
     max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px #262626;
     
 }
 
-.jobs > div
+/*.jobs > div
 {
     border: solid 5px #2176FF;
     background-color: #262626;
+    box-shadow: 10px 10px #FF1053;
+    cursor: pointer;
     
+}*/
+
+.button_JoinUs /*Button saying "Join Us"*/
+{
+    background-color: #2176FF;
+    border: solid 5px #FFFFFF;
+    box-shadow: 10px 10px #FF1053;
 }
 
-.jobsImageTextCentered
+.button_JoinUs:hover /*Styles to apply when user hovers over button*/
+{
+    background-color: #262626;
+    border: solid 5px #2176FF;
+   
+}
+
+.jobsImageText
 {
     position: absolute;
-    top: 600px;
-    right: -90px;
-    transform: translate(-50%, -50%);
+    top: 700px;
+    right: 50px;
+    /*transform: translate(-50%, -50%);*/
     color: #FFFFFF;
     padding: 5px;
     max-width: 100vw;
@@ -252,6 +272,7 @@
     width: 50px;
     align-items: center;
     justify-content: space-between;
+    z-index: 3;
     
 }
 
