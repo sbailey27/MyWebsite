@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Highlight the clicked image
         sliderButtons[index].style.opacity = "1";
-        sliderButtons[index].style.border = "3px solid #ff1053"; // Change to your desired highlight color
+        sliderButtons[index].style.border = "3px solid #ff1053"; // sets border style for highlight
     }
 });
 
