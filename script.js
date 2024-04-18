@@ -132,3 +132,26 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+
+/*****Jobs Page Job Listing Accordion******/
+document.addEventListener("DOMContentLoaded", function() {
+var accordion = document.getElementsByClassName("accordion"); /*Get all elements with the class "accordion" Store them in a variable called "accordion"*/
+var i;
+
+for (i = 0; i < accordion.length; i++) /*iterate through elements in the "accordion" class*/
+{
+    /* add event listener for when item is clicked*/
+  accordion[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    
+    /*if panel maxHeight is set, it indicates panel is open so make it null to collapse the panel. If maxHeight is not set, panel is collapsed
+    so set maxHeight to the scrollHeight of the panel to open panel*/
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+});
