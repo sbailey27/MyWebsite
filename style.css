@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'roboto', Courier, monospace;
     max-width: 100vw;
 }
 /*****NAVIGATION BAR*****/
@@ -459,24 +459,25 @@
 /*****JObs Page CSS*****/
 .why_choose
 {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
     color: #FF1053;
     font-weight: 800;
-    font-size: bold;
+    font-size: 30px;
+    background-color: #262626;
 }
 
 .job_benefits
 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.job_card
+.benefits_card
 {
     display: flex;
     flex-direction: column;
@@ -484,9 +485,38 @@
     margin-top: 20px;
 }
 
-.job_card p
+.benefits_card p
 {
     padding: 10px;
     color: #FF1053;
     
+}
+
+/* styling accordions on jobs page*/
+.open_positions /*styling for container for accordions*/
+{
+    margin-top: 50px;
+    background-color: #262626;
+}
+
+.accordion /*styling for accordions*/
+{
+    background-color: #262626;
+    width: 95%;
+    max-width: 100vw;
+    outline: none;
+    border: none;
+    text-align: left;
+    color: #FF1053;
+    padding: 15px 15px 15px 5%;
+    box-sizing: border-box;
+    margin-left: 5%;
+    font-size: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.accordion:hover
+{
+    color: #FFFFFF;
 }
