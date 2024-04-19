@@ -141,9 +141,27 @@ for (i = 0; i < accordion.length; i++) /*iterate through elements in the "accord
 });
 
 /*****News Page Accordion*****/
-document.addEventListener("DOMContentLoaded", function{
-var news_accordion = document.getElementsByClassName("news_card");
+document.addEventListener("DOMContentLoaded", function(){
+var news_accordion = document.getElementsByClassName("news_accordion"); /*Get all elements with class "news_Card"*/
 var a;
 
-for()
-})
+for(a=0 ; a < news_accordion.length; a++)
+    {
+        news_accordion[a].addEventListener("click", function()
+            {
+                this.classList.toggle("active");
+                var news_panel = this.nextElementSibling;
+
+                if (news_panel.style.maxHeight)
+                    {
+                        news_panel.style.maxHeight = null;
+                        this.style.backgroundColor = "white";
+                    }
+                    else
+                    {
+                        news_panel.style.maxHeight = news_panel.scrollHeight + "px";
+                        this.style.backgroundColor = "black";
+                    }
+            });
+    }
+});
