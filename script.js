@@ -155,7 +155,7 @@ for(a=0 ; a < news_accordion.length; a++)
                 if (news_panel.style.maxHeight)
                     {
                         news_panel.style.maxHeight = null;
-                        this.style.backgroundColor = "white";
+                        this.style.backgroundColor = "";
                     }
                     else
                     {

@@ -686,6 +686,17 @@
     
 }
 
+.news_panel a
+{
+    text-decoration: none;
+    color: #2176FF;
+}
+
+.news_panel a:hover
+{
+    text-decoration: underline;
+}
+
 .bold_text
 {
     font-weight: bolder;
@@ -698,3 +709,4 @@
     font-weight: bolder;
     font-size: 2.5rem;
 }
+
