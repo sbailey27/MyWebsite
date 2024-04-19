@@ -139,3 +139,11 @@ for (i = 0; i < accordion.length; i++) /*iterate through elements in the "accord
   });
 }
 });
+
+/*****News Page Accordion*****/
+document.addEventListener("DOMContentLoaded", function{
+var news_accordion = document.getElementsByClassName("news_card");
+var a;
+
+for()
+})
