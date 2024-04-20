@@ -165,3 +165,20 @@ for(a=0 ; a < news_accordion.length; a++)
             });
     }
 });
+
+
+/*****Highlight clicked nav bar link*****/
+/*document.addEventListener("DOMContentLoaded",function()
+{
+    var navlinks = document.getElementsByClassName("nav_links_child");
+    var n;
+    
+    for (n = 0; n < navlinks.length; n++ )
+    {
+        navlinks[n].addEventListener("click", function()
+    {
+        this.style.color = "blue";
+    });
+    }
+
+});*/

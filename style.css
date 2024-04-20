@@ -36,6 +36,7 @@
     text-decoration: underline;
 }
 
+
 /*CSS for list elements within div class "navlinks". Removes list bullets and displays list horizontally*/
  .navlinks ul li
  {
@@ -76,6 +77,8 @@
     outline: none;
     height: 30px;
  }
+
+
 
  /*****CSS FOR FRONT PAGE VIDEO SLIDER*****/
  .videoslider 
@@ -622,7 +625,7 @@
     flex-wrap: wrap;
     margin-top: 10px;
     align-items: center;
-    background-color: #FFFFFF;
+    /*background-color: #FFFFFF;*/
     justify-content: center;
 }
 
@@ -643,18 +646,16 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: transparent;
     outline: none;
     border: none;
     cursor: pointer;  
     padding: 10px;   
-    width: 100%;
-    max-width: 100vw; 
+    width: 960px;
+    max-width: 50vw; 
     flex-shrink: 0;
     overflow-x: hidden;
     box-sizing: border-box;
-    
-    
 }
 
 
@@ -677,6 +678,7 @@
 .news_container img
 {
     width: 300px;
+    max-width: 100vw;
     height: auto;
 }
 
@@ -742,3 +744,19 @@
     font-size: 2.5rem;
 }
 
+.background_banner
+{
+    background-color: #262626;
+    width: 50%;
+    height: 100vh;
+    max-width: 50vw;
+    position: fixed;
+    z-index: -1;
+    
+}
+
+.background_banner_wrapper
+{
+    display: flex;
+    justify-content: center;
+}
