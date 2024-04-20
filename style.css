@@ -482,11 +482,14 @@
     /*grid-template-columns: 1fr 1fr 1fr;*/
     grid-template-columns: repeat(3, minmax(200px, auto));
     gap: 20px;
-    padding: 0px 200px 0px 200px;
-    overflow-x: hidden;
     
-    
-    
+}
+
+.grid_wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .benefits_card
@@ -520,11 +523,12 @@
 {
     position: fixed;
     top: 60px;
-    z-index: -1;
+    z-index: -2;
     filter: brightness(30%);
     width: 100%;
     height: auto;
     max-width: 100vw;
+    display: none;
 }
 
 /* styling accordions on jobs page*/
