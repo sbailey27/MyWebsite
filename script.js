@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() //Wait for DOM to load
 
         function frontVideoSlide() 
         {
+            
             frontVideos[slides].style.display = "block"; // Show current video
             frontVideos[slides].play(); // Start playing current video
 
