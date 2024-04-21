@@ -202,7 +202,7 @@
     align-items: center;
 }
 
-@media (min-width: 600px)
+@media (min-width: 1080px)
 {
         .news_1, .news_3, .news_2
     {
