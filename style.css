@@ -202,37 +202,6 @@
     align-items: center;
 }
 
-@media (min-width: 320px)
-{
-        .news_1, .news_3, .news_2
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0px 20px 0px;
-    }
-
-    .newsimages
-    {
-        /*display: flex;*/
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .news_2
-    {
-        flex-direction: column-reverse;
-    }
-
-    .news_1 p, .news_3 p
-    {
-        margin: 10px; 
-        font-size: 20px;
-    }
-
-}
-
 
 .news_1 p, .news_3 p
 {
@@ -252,7 +221,51 @@
 }
 
 
+@media (max-width: 1154px) and (max-height: 895px)
+{
+        .news_1, .news_3, .news_2
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 40px 20px 40px;
+    }
 
+    .newsimages
+    {
+        /*display: flex;*/
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .news_2
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+
+    .news_1 p, .news_3 p
+    {
+        margin: 10px; 
+        font-size: 20px;
+    }
+
+    .news_2 p
+    {
+        margin-left: 0px;
+        text-align: left;
+    } 
+
+    .news span
+    {
+        font-weight: 600;
+        color: #F46036;
+        font-size: 30px;
+    }
+
+}
 
 /*jobs div*/
 .jobs
@@ -527,15 +540,9 @@
 
 .job_benefits
 {
-    /*display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;*/
     display: grid;
-    /*grid-template-columns: 1fr 1fr 1fr;*/
     grid-template-columns: repeat(3, minmax(200px, auto));
-    gap: 20px;
-    
+    gap: 20px;  
 }
 
 .grid_wrapper
@@ -673,6 +680,28 @@
 .panel_links a:hover
 {
     text-decoration: underline; /*Helps with indicating item can be clicked*/
+}
+
+/*JOBS.html media queries*/
+@media (max-width: 1154px) and (max-height: 895px)
+{
+    .job_benefits
+    {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, auto));
+        gap: 2px;  
+    }
+
+    .benefits_card img
+    {
+        width: 221px;
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #FF1053;
+        object-fit: contain;
+    }
+
+
 }
 
 /*****NEWS.html styling*****/
