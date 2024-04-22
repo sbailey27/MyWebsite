@@ -157,11 +157,15 @@ for(a=0 ; a < news_accordion.length; a++)
                     {
                         news_panel.style.maxHeight = null;
                         this.style.backgroundColor = "";
+                        this.style.width = "";
+                        this.style.maxWidth = "";
                     }
                     else
                     {
                         news_panel.style.maxHeight = news_panel.scrollHeight + "px";
                         this.style.backgroundColor = "black";
+                        this.style.width = "100%";
+                        this.style.maxWidth = "100%";
                     }
             });
     }
