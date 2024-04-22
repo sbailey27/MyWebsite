@@ -4,14 +4,11 @@
     font-family: 'roboto', Courier, monospace;
     max-width: 100vw;
 }
-
-
 /*****NAVIGATION BAR*****/
 /*navigation bar*/
 .navbar
 {
-    /*background-color: #262626;*/
-    background: linear-gradient(45deg, #262626, #111111, #262626, #FF1053);
+    background-color: #262626;
     width: 100%;
     height: 60px;
     display: flex;
@@ -20,67 +17,6 @@
     position: fixed;
     top: 0;
     z-index: 2;
-}
-
-/*navigation bar media query*/
-@media only screen and (max-width: 1000px)
-{
-    .navbar
-    {
-        background-color: #262626;
-        width: 100%;
-        height: 60px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        z-index: 2;
-        object-fit: contain;
-        
-        
-    }
-
-    .navlinks a
-{
-    /*list-style-type: none;*/
-    text-decoration: none;
-    color: white;
-    font-size: 50px;
-    display: flex;
-    
-}
-
-.navlinks ul li
-{
-   list-style-type: none;
-   display: inline-block;
-   padding: 5px;
-   font-size: 1px;
-}
-
-.logoimg
- {
-    width: 2px;
-    height: auto;
-    position: relative;
-    top: 6px;
-    margin-left: 20px;
- }
-
- .logo
- {
-    font-size: 1px;
-    display: none;
- }
-
- .navlinks ul li a
- {
-    font-size: 5px;
-    padding: 0px;
- }
 }
 
 /*links in navigation bar*/
@@ -99,7 +35,6 @@
     color: #FF1053;
     text-decoration: underline;
 }
-
 
 /*CSS for list elements within div class "navlinks". Removes list bullets and displays list horizontally*/
  .navlinks ul li
@@ -141,8 +76,6 @@
     outline: none;
     height: 30px;
  }
-
-
 
  /*****CSS FOR FRONT PAGE VIDEO SLIDER*****/
  .videoslider 
@@ -202,7 +135,7 @@
  /*CSS for News section*/
 .news
 {
-    /*background-color: #FFFFFF;*/
+    background-color: #FFFFFF;
     
 }
 
@@ -220,7 +153,6 @@
 {
     font-size: 30px;
     padding: 5px;
-    
 }
 
 
@@ -246,7 +178,6 @@
     align-items: center;
 }
 
-
 .news_1 p, .news_3 p
 {
     margin: 10px; 
@@ -265,51 +196,7 @@
 }
 
 
-@media (max-width: 1154px) 
-{
-        .news_1, .news_3, .news_2
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 40px 20px 40px;
-    }
 
-    .newsimages
-    {
-        /*display: flex;*/
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .news_2
-    {
-        flex-direction: column-reverse;
-        align-items: center;
-        
-    }
-
-    .news_1 p, .news_3 p
-    {
-        margin: 10px; 
-        font-size: 20px;
-    }
-
-    .news_2 p
-    {
-        margin-left: 0px;
-        text-align: left;
-    } 
-
-    .news span
-    {
-        font-weight: 600;
-        color: #F46036;
-        font-size: 30px;
-    }
-
-}
 
 /*jobs div*/
 .jobs
@@ -449,13 +336,6 @@
     color: #FFFFFF;
     
 }
-@media only screen and (max-width: 1000px)
-{
-    .centeredtext_minor
-    {
-        display: none;
-    }
-}
 
 .centeredtext h1
 {
@@ -485,7 +365,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 300px;  
+    margin-top: 300px;
+    /*object-fit: contain;*/
+    
 }
 
 
@@ -535,42 +417,6 @@
     border: 5px solid;
     
 }
-@media only screen and (max-width: 1000px)
-{
-            .minor
-        {
-            position: absolute;
-            left: 0px;
-            bottom: -50px;
-            width: 100%;
-            height: 100px;
-            color: #FFFFFF;
-            background-color: #262626;
-            border: #FFFFFF 1px solid;
-            box-sizing: border-box;
-            max-width: 100vw;
-        }
-
-        .major
-        {
-            position: absolute;
-            left: 0px;
-            bottom: -150px;
-            width: 100%;
-            height: 100px;
-            padding: 0px;
-            background-color: #FFFFFF;
-            color: #262626;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 100vw;
-            border: 5px solid;
-            box-sizing: border-box;
-            
-        }
-}
-
 
 .minor p 
 {
@@ -602,16 +448,6 @@
     max-width: 100%;
 }
 
-@media only screen and (max-width: 1000px)
-{
-    .gamecards img
-    {
-        width: 100%;
-        max-width: 100vw;
-    }
-}
-
-
 .game_card_video
 {
     margin-left: auto;
@@ -621,24 +457,6 @@
     max-width: 100%;
 }
 
-@media only screen and (max-width: 1000px)
-{
-        .game_card_video
-    {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        height: auto;
-        max-width: 100vw;
-    }
-
-    .gamesPageVideo
-    {
-        width: 100%;
-        height: auto;
-        max-width: 100vw;
-    }
-}
 /*****Jobs Page CSS*****/
 .why_choose
 {
@@ -653,16 +471,11 @@
 
 .job_benefits
 {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, auto));
-    gap: 20px;  
-}
-
-.grid_wrapper
-{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 
 .benefits_card
@@ -686,22 +499,16 @@
 .benefits_card img
 {
     width: 442px;
-    max-width: 100%;
     height: auto;
     border: 2px solid #FF1053;
-    object-fit: contain;
 }
 
 .jobs_video
 {
     position: fixed;
     top: 60px;
-    z-index: -2;
+    z-index: -1;
     filter: brightness(30%);
-    width: 100%;
-    height: auto;
-    max-width: 100vw;
-    display: none;
 }
 
 /* styling accordions on jobs page*/
@@ -709,31 +516,23 @@
 {
     margin-top: 50px;
     background-color: #262626;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .accordion /*styling for accordions*/
 {
     background-color: #262626;
-    /*background: linear-gradient(90deg, #262626, #111111, #FF1053);*/
     width: 100%;
     max-width: 100vw;
     outline: none;
     border: none;
+    text-align: left;
     color: #FF1053;
-    padding: 15px 0px 15px 15%;
+    padding: 15px 15px 15px 5%;
     box-sizing: border-box;
+    /*margin-left: 5%;*/
     font-size: 50px;
     font-weight: bolder;
     cursor: pointer;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    word-break: normal;
-    
 }
 
 .accordion:hover /*Style accordion on hover*/
@@ -751,8 +550,6 @@
     display: flex;
     flex-direction: column;
     max-width: 100vw;
-    
-    box-sizing: border-box;
 }
 
 .panel a
@@ -769,21 +566,19 @@
 {
     margin-top: 10px;
     
-    
 }
 
 .panel_links
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;   
 }
 
 .panel_links a /*spacing between link in panels. Each item has a right margin to create spacing 
                 between them, except for the last item where the margin is removed.*/
 {
     margin-right: 60px;
-    flex-basis: 20%;
 }
 .panel_links a:last-child
 {
@@ -795,108 +590,40 @@
     text-decoration: underline; /*Helps with indicating item can be clicked*/
 }
 
-/*JOBS.html media queries*/
-@media (max-width: 1154px) 
-{
-    .grid_wrapper
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .job_benefits
-    {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;  
-    }
-    .benefits_card
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: 33.3333%;
-    }
-
-    .benefits_card img
-    {
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        border: 2px solid #FF1053;
-        object-fit: contain;
-    }
-
-    .accordion /*styling for accordions*/
-{
-    background-color: #262626;
-    width: 100%;
-    max-width: 100vw;
-    outline: none;
-    border: none;
-    color: #FF1053;
-    padding: 15px 0px 15px 5px;
-    box-sizing: border-box;
-    font-size: 40px;
-    font-weight: bolder;
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    word-break: normal;
-    
-}
-
-.open_positions button 
-{
-    padding: 0px;
-}
-
 /*****NEWS.html styling*****/
 .news_container
-{ 
+{
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px; /* Gap between grid items 
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #262626;*/
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 10px;
-    align-items: center;
+    
     background-color: #FFFFFF;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.news_card
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    
-}
 .news_accordion
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: transparent;
+    background-color: #FFFFFF;
     outline: none;
     border: none;
     cursor: pointer;  
     padding: 10px;   
-    width: 960px;
-    max-width: 50vw; 
+    width: 100%;
+    max-width: 100vw; 
     flex-shrink: 0;
-    overflow-x: hidden;
-    box-sizing: border-box;
 }
 
 
@@ -908,7 +635,6 @@
     font-size: 1.5rem;
     text-align: center;
     flex-grow: 1;
-    flex-basis: 50%;
 }
 
 .news_accordion:hover
@@ -919,7 +645,6 @@
 .news_container img
 {
     width: 300px;
-    max-width: 100vw;
     height: auto;
 }
 
@@ -984,23 +709,4 @@
     font-weight: bolder;
     font-size: 2.5rem;
 }
-
-.background_banner
-{
-    /*background-color: #262626;*/
-    background: linear-gradient(45deg, #FF1053, #111111, #262626, #FF1053);
-    width: 50%;
-    height: 100vh;
-    max-width: 50vw;
-    position: fixed;
-    z-index: -1;
-    
-}
-
-.background_banner_wrapper
-{
-    display: flex;
-    justify-content: center;
-}
-
 
