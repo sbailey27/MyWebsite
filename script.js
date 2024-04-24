@@ -172,18 +172,31 @@ for(a=0 ; a < news_accordion.length; a++)
 });
 
 
-/*****Highlight clicked nav bar link*****/
-/*document.addEventListener("DOMContentLoaded",function()
-{
-    var navlinks = document.getElementsByClassName("nav_links_child");
-    var n;
-    
-    for (n = 0; n < navlinks.length; n++ )
-    {
-        navlinks[n].addEventListener("click", function()
-    {
-        this.style.color = "blue";
-    });
-    }
 
-});*/
+
+document.addEventListener("DOMContentLoaded", function(){
+    
+    const menu = document.querySelector(".menu_icon");
+    menu.addEventListener("click", myNavMenu);
+
+    function myNavMenu(){
+        var navLinks = document.querySelector(".navlinks");
+        if (navLinks.style.display === "block")
+        {
+            navLinks.style.display = "none";
+        }
+        else
+        {
+            navLinks.style.display = "block";
+        }
+    }
+});
+
+window.addEventListener("resize", function() {
+    var navLinks = document.querySelector(".navlinks");
+    
+    // Check if window width is greater than 1000px and navLinks display style is none
+    if (window.innerWidth > 1000 && navLinks.style.display === "none") {
+        navLinks.style.display = ""; // Remove inline style to allow CSS to take over
+    }
+});

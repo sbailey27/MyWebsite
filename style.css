@@ -39,6 +39,8 @@
 
 }
 
+
+
 /*links in navigation bar*/
 .navlinks a
 {
@@ -48,16 +50,34 @@
     font-size: 25px;
     font-weight: 600;
 }
-@media only screen and (max-width: 1000px)
+/* @media only screen and (max-width: 1000px)
 {
     .navlinks a
     {
-        /*list-style-type: none;*/
+        
         text-decoration: none;
         color: white;
         font-size: 50px;
+        display: none;    
+    }
+} */
+.navlinks
+{
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .navlinks
+    {
         display: none;
-        
+        position: fixed;
+        top: 80px;
+        right: 0px;
+        z-index: 1000;
+        background-color: #262626;
+        width: 100%;
+        max-width: 100vw;
     }
 }
 
@@ -81,7 +101,7 @@
     .navlinks ul li
 {
    list-style-type: none;
-   display: inline-block;
+   display: block;
    padding: 5px;
    font-size: 40px;
 }
@@ -96,9 +116,10 @@
  {
     .menu_icon
     {
-        position: absolute;
+        position: fixed;
         top: 15px;
         right: 10px;
+        cursor: pointer;
         
     }
  }
