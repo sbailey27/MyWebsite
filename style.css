@@ -87,6 +87,22 @@
 }
  }
 
+ .menu_icon
+ {
+    background-color: #FF1053;
+    z-index: 10;
+ }
+ @media only screen and (max-width: 1000px)
+ {
+    .menu_icon
+    {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        
+    }
+ }
+ 
  /*logo styling*/
  .logo
  {
@@ -156,6 +172,13 @@
     border-radius: 10%;
     outline: none;
     height: 30px;
+ }
+ @media only screen and (max-width: 1000px)
+ {
+    .searchbar
+    {
+        display: none;
+    }
  }
 
  /*****CSS FOR FRONT PAGE VIDEO SLIDER*****/
