@@ -19,8 +19,7 @@
     z-index: 2;
 }
 
-/*navigation bar media query*/
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1000px)/*navigation bar media query*/
 {
     .navbar
     {
@@ -35,49 +34,9 @@
         position: fixed;
         top: 0;
         z-index: 2;
-        object-fit: contain;
-        
-        
+        object-fit: contain;   
     }
 
-    .navlinks a
-{
-    /*list-style-type: none;*/
-    text-decoration: none;
-    color: white;
-    font-size: 50px;
-    display: flex;
-    
-}
-
-.navlinks ul li
-{
-   list-style-type: none;
-   display: inline-block;
-   padding: 5px;
-   font-size: 40px;
-}
-
-.logoimg
- {
-    width: 2px;
-    height: auto;
-    position: relative;
-    top: 6px;
-    margin-left: 20px;
- }
-
- .logo
- {
-    font-size: 1px;
-    
- }
-
- .navlinks ul li a
- {
-    font-size: 20px;
-    padding: 0px;
- }
 }
 
 /*links in navigation bar*/
@@ -88,6 +47,18 @@
     color: white;
     font-size: 25px;
     font-weight: 600;
+}
+@media only screen and (max-width: 1000px)
+{
+    .navlinks a
+    {
+        /*list-style-type: none;*/
+        text-decoration: none;
+        color: white;
+        font-size: 50px;
+        display: none;
+        
+    }
 }
 
 /*Changes color of links upon mouseover*/
@@ -105,12 +76,49 @@
     padding: 25px;
  }
 
+ @media only screen and (max-width: 1000px)
+ {
+    .navlinks ul li
+{
+   list-style-type: none;
+   display: inline-block;
+   padding: 5px;
+   font-size: 40px;
+}
+ }
+
  /*logo styling*/
+ .logo
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ @media only screen and (max-width: 1000px)
+ {
+    .logo
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+ }
+
+
  .logo a
  {
      text-decoration: none;
      font-size: 40px;
      color: white;
+ }
+
+ @media only screen and (max-width: 1000px)
+ {
+    .logo a 
+    {
+        font-size: 30px;
+    }
  }
  
  /*logo img styling*/
@@ -121,6 +129,18 @@
     position: relative;
     top: 6px;
     margin-left: 20px;
+ }
+ 
+ @media only screen and (max-width: 1000px)
+ {
+    .logoimg
+ {
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 6px;
+    margin-left: 20px;
+ }
  }
 
  .searchbar_div
@@ -661,12 +681,20 @@
 
 .job_benefits
 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
 }
+
+        @media only screen and (max-width: 1000px)
+        {
+            .job_benefits
+                {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+                    
+                }
+        }
 
 .benefits_card
 {
@@ -674,10 +702,28 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    flex-grow: 0;
+    /*flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 33.3333%;
+    flex-basis: 33.3333%;*/
 }
+@media only screen and (max-width: 1000px)
+{
+    .benefits_card
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        /*flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 33.3333%;*/
+        padding: 10px 10px 10px 10px;
+    }
+
+}
+
+    
 
 .benefits_card p
 {
@@ -691,6 +737,18 @@
     width: 442px;
     height: auto;
     border: 2px solid #FF1053;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .benefits_card img
+    {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #FF1053;
+        object-fit: contain;
+    }
 }
 
 .jobs_video
@@ -708,7 +766,7 @@
     background-color: #262626;
 }
 
-.accordion /*styling for accordions*/
+.accordion /*styling for accordions listing different job catagories*/
 {
     background-color: #262626;
     width: 100%;
@@ -724,13 +782,30 @@
     font-weight: bolder;
     cursor: pointer;
 }
+@media only screen and (max-width: 1000px)
+{
+    .accordion /*styling for accordions*/
+    {
+        background-color: #262626;
+        width: 100%;
+        max-width: 100vw;
+        outline: none;
+        border: none;
+        color: #FF1053;
+        padding: 25px 15px 25px 5%;
+        box-sizing: border-box;
+        font-size: 30px;
+        font-weight: bolder;
+        cursor: pointer;     
+    }
+}
 
 .accordion:hover /*Style accordion on hover*/
 {
     color: #FFFFFF;
 }
 
-.panel
+.panel /*Panel that appears when accordion is clicked*/
 {
     padding: 0px 40px;
     background-color: white;
@@ -745,7 +820,7 @@
     padding-right: 15%;
 }
 
-.panel a
+.panel a /*Style link elements in panel*/
 {
     text-decoration: none;
     color: #FF1053;
@@ -755,13 +830,13 @@
 
 }
 
-.panel p
+.panel p /*style paragraphs in panel*/
 {
     margin-top: 10px;
     
 }
 
-.panel_links
+.panel_links /* List of job titles shown in panel*/
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -773,8 +848,9 @@
          .panel_links
             {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
                 gap: 10px;
+                
                 
             }
     }
@@ -807,7 +883,7 @@
         align-items: center;
     }
 
-    .job_benefits
+    /*.job_benefits
     {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -816,71 +892,17 @@
         margin-right: 15%;  
 
     }
-    .benefits_card
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: 33.3333%;
-    }
-
-    .benefits_card img
-    {
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        border: 2px solid #FF1053;
-        object-fit: contain;
-    }
-
-    .accordion /*styling for accordions*/
-{
-    background-color: #262626;
-    width: 100%;
-    max-width: 100vw;
-    outline: none;
-    border: none;
-    color: #FF1053;
-    padding: 15px 15px 15px 5%;
-    box-sizing: border-box;
-    font-size: 40px;
-    font-weight: bolder;
-    cursor: pointer;     
-}
-
-.open_positions button 
-{
-    padding: 0px;
-}
-
-.job_benefits img
-{
-    width: 100%;
-    height: auto;
-}
+    */
+    
    }
 
 /*****NEWS.html styling*****/
 .news_container
 {
-    /*display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 40px; /* Gap between grid items 
-    margin-top: 10px;
-    padding: 20px;
-    background-color: #262626;*/
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 80px;
-    background-color: transparent;
-    
-    
-    
+    background-color: transparent;   
 }
 
 @media only screen and (max-width: 1000px)
@@ -899,6 +921,11 @@
     }
 }
 
+
+.news_container a
+{
+    text-decoration: none;
+}
 .news_card
 {
     display: flex;
