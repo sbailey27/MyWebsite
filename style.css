@@ -263,6 +263,32 @@
     }
  }
  
+ .gamesDropdown
+ {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: #262626;
+    min-width: 500px;
+    height: auto;
+    margin: 5px 0 0 0;
+    padding: 0 0 0 0;
+    font: 5px;
+ }
+ 
+ .gamesDropdown li
+ {
+    margin-bottom: 0;
+ }
+ .gamesDropdownHolder
+ {
+    position: relative;
+ }
+
+ .gamesDropdownHolder:hover .gamesDropdown
+ {
+    display: block;
+ }
  /*logo styling*/
  .logo
  {
@@ -483,7 +509,7 @@
 }
 
 /* sets flex for news subsections */
-.news_1, .news_3, .news_2
+.news_1, .news_2, .news_3
 {
     display: flex;
     align-items: center;
@@ -499,6 +525,13 @@
     }
 }
 
+@media only screen and (max-width: 1000px)
+{
+    .news_1
+    {
+        margin-top: 30px;
+    }
+}
 .news_1 p, .news_3 p
 {
     margin: 10px; 
@@ -728,7 +761,13 @@
     top: 400px;
     margin-bottom: 300px;
 }
-
+@media only screen and (max-width: 1000px)
+{
+    .game_card_3
+    {
+        margin-bottom: 500px;
+    }
+}
 .minor
 {
     position: absolute;
