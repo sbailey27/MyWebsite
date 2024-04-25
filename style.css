@@ -75,7 +75,7 @@
 {
     color: #FF1053;
 }
-/*****SOCIAL MEDIA BAR*****/
+
 .socials
 {
     display: flex;
@@ -1328,3 +1328,33 @@
     font-size: 2.5rem;
 }
 
+.demoFlexWrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.demoGridWrapper
+{
+    display: grid;
+    grid-template-columns: 1fr;   
+    gap: 60px;
+    text-align: center;
+}
+
+.demoButtonsWrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.option_btn
+{
+    width: 500px;
+    height: 50px;
+    cursor: pointer;
+}
