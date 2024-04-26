@@ -200,3 +200,4 @@ window.addEventListener("resize", function() {
         navLinks.style.display = ""; // Remove inline style to allow CSS to take over
     }
 });
+
