@@ -24,7 +24,7 @@
 .footerWrapper
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     column-gap: 30px;
     row-gap: 50px;
     color: #FFFFFF;
@@ -65,7 +65,7 @@
     color: #FF1053;
 }
 
-.footerLinks a
+.footerWrapper a
 {
     color: #FFFFFF;
     text-decoration: none;
@@ -87,7 +87,7 @@
 {
     .socials
     {
-        grid-column: 1 / 4;
+        grid-column: 1 / 3;
     }
 }
 
@@ -1364,4 +1364,30 @@
 tw-link:hover,
 .enchantment-link:hover {
 	color: #FF1053;
+}
+
+.aboutPageWrapper
+{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.aboutUs
+{
+    padding: 20px;
+}
+
+.aboutUs p
+{
+    padding: 0 0 20px 0;
+}
+
+.aboutUs h2
+{
+    color: #FF1053;
 }
